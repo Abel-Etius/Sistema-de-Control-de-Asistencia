@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ControlAsistencia.Datos/ControlAsistencia.Datos.csproj" Id="4588e102-1977-48b5-a74f-405fa2f89a05" />
+  <Project Path="ControlAsistencia.Negocio/ControlAsistencia.Negocio.csproj" Id="4904b3cd-da66-41c1-bc17-838a2e807561" />
+  <Project Path="ControlAsistencia.Presentacion/ControlAsistencia.Presentacion.csproj" />
+</Solution>
