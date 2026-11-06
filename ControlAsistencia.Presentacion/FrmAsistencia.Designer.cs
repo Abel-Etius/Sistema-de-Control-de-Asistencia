@@ -33,22 +33,22 @@ namespace ControlAsistencia.Presentacion
 
         {
             lblTitulo = new Label();
-            label2 = new Label();
+            lblCurso = new Label();
             cmbCurso = new ComboBox();
-            label3 = new Label();
+            lblFecha = new Label();
             dgvAsistencia = new DataGridView();
-            label4 = new Label();
+            lblSubtitulo = new Label();
             dtpFecha = new DateTimePicker();
-            button4 = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            panel1 = new Panel();
-            textBox1 = new TextBox();
-            checkBox1 = new CheckBox();
+            btnPorcentaje = new Button();
+            btnRegistrar = new Button();
+            btnConsultar = new Button();
+            btnModificar = new Button();
+            pnlAzul = new Panel();
+            txtEstudiante = new TextBox();
+            chkPresente = new CheckBox();
             lblEstudiante = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvAsistencia).BeginInit();
-            panel1.SuspendLayout();
+            pnlAzul.SuspendLayout();
             SuspendLayout();
             // 
             // lblTitulo
@@ -66,15 +66,15 @@ namespace ControlAsistencia.Presentacion
             lblTitulo.UseWaitCursor = true;
             lblTitulo.Click += label1_Click;
             // 
-            // label2
+            // lblCurso
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(59, 82);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Curso:";
-            label2.UseWaitCursor = true;
+            lblCurso.AutoSize = true;
+            lblCurso.Location = new Point(59, 82);
+            lblCurso.Name = "lblCurso";
+            lblCurso.Size = new Size(49, 20);
+            lblCurso.TabIndex = 1;
+            lblCurso.Text = "Curso:";
+            lblCurso.UseWaitCursor = true;
             // 
             // cmbCurso
             // 
@@ -87,15 +87,15 @@ namespace ControlAsistencia.Presentacion
             cmbCurso.Text = "Seleccionar curso...";
             cmbCurso.UseWaitCursor = true;
             // 
-            // label3
+            // lblFecha
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(844, 80);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 3;
-            label3.Text = "Fecha:";
-            label3.UseWaitCursor = true;
+            lblFecha.AutoSize = true;
+            lblFecha.Location = new Point(844, 80);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(50, 20);
+            lblFecha.TabIndex = 3;
+            lblFecha.Text = "Fecha:";
+            lblFecha.UseWaitCursor = true;
             // 
             // dgvAsistencia
             // 
@@ -114,18 +114,18 @@ namespace ControlAsistencia.Presentacion
             dgvAsistencia.UseWaitCursor = true;
             dgvAsistencia.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // label4
+            // lblSubtitulo
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label4.AutoSize = true;
-            label4.Location = new Point(595, 27);
-            label4.Name = "label4";
-            label4.Size = new Size(211, 20);
-            label4.TabIndex = 6;
-            label4.Text = "Sistema de gestión académica";
-            label4.TextAlign = ContentAlignment.TopCenter;
-            label4.UseWaitCursor = true;
-            label4.Click += label4_Click;
+            lblSubtitulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblSubtitulo.AutoSize = true;
+            lblSubtitulo.Location = new Point(595, 27);
+            lblSubtitulo.Name = "lblSubtitulo";
+            lblSubtitulo.Size = new Size(211, 20);
+            lblSubtitulo.TabIndex = 6;
+            lblSubtitulo.Text = "Sistema de gestión académica";
+            lblSubtitulo.TextAlign = ContentAlignment.TopCenter;
+            lblSubtitulo.UseWaitCursor = true;
+            lblSubtitulo.Click += label4_Click;
             // 
             // dtpFecha
             // 
@@ -136,87 +136,87 @@ namespace ControlAsistencia.Presentacion
             dtpFecha.TabIndex = 7;
             dtpFecha.UseWaitCursor = true;
             // 
-            // button4
+            // btnPorcentaje 
             // 
-            button4.BackColor = SystemColors.Info;
-            button4.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(885, 728);
-            button4.Name = "button4";
-            button4.Size = new Size(240, 66);
-            button4.TabIndex = 11;
-            button4.Text = "Ver porcentajes de asistencia";
-            button4.UseVisualStyleBackColor = false;
-            button4.UseWaitCursor = true;
-            button4.Click += button4_Click;
+            btnPorcentaje.BackColor = SystemColors.Info;
+            btnPorcentaje.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPorcentaje.Location = new Point(885, 728);
+            btnPorcentaje.Name = "btnPorcentaje";
+            btnPorcentaje.Size = new Size(240, 66);
+            btnPorcentaje.TabIndex = 11;
+            btnPorcentaje.Text = "Ver porcentajes de asistencia";
+            btnPorcentaje.UseVisualStyleBackColor = false;
+            btnPorcentaje.UseWaitCursor = true;
+            btnPorcentaje.Click += button4_Click;
             // 
-            // button1
+            // btnRegistrar 
             // 
-            button1.BackColor = SystemColors.Info;
-            button1.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(25, 729);
-            button1.Name = "button1";
-            button1.Size = new Size(240, 66);
-            button1.TabIndex = 12;
-            button1.Text = "Registrar asistencia";
-            button1.UseVisualStyleBackColor = false;
-            button1.UseWaitCursor = true;
-            button1.Click += button1_Click;
+            btnRegistrar.BackColor = SystemColors.Info;
+            btnRegistrar.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegistrar.Location = new Point(25, 729);
+            btnRegistrar.Name = "btnRegistrar ";
+            btnRegistrar.Size = new Size(240, 66);
+            btnRegistrar.TabIndex = 12;
+            btnRegistrar.Text = "Registrar asistencia";
+            btnRegistrar.UseVisualStyleBackColor = false;
+            btnRegistrar.UseWaitCursor = true;
+            btnRegistrar.Click += button1_Click;
             // 
-            // button2
+            // btnConsultar 
             // 
-            button2.BackColor = SystemColors.Info;
-            button2.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(313, 728);
-            button2.Name = "button2";
-            button2.Size = new Size(240, 66);
-            button2.TabIndex = 13;
-            button2.Text = "Consultar asistencia";
-            button2.UseVisualStyleBackColor = false;
-            button2.UseWaitCursor = true;
-            button2.Click += button2_Click;
+            btnConsultar.BackColor = SystemColors.Info;
+            btnConsultar.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnConsultar.Location = new Point(313, 728);
+            btnConsultar.Name = "btnConsultar ";
+            btnConsultar.Size = new Size(240, 66);
+            btnConsultar.TabIndex = 13;
+            btnConsultar.Text = "Consultar asistencia";
+            btnConsultar.UseVisualStyleBackColor = false;
+            btnConsultar.UseWaitCursor = true;
+            btnConsultar.Click += button2_Click;
             // 
-            // button3
+            // btnModificar 
             // 
-            button3.BackColor = SystemColors.Info;
-            button3.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(599, 728);
-            button3.Name = "button3";
-            button3.Size = new Size(240, 66);
-            button3.TabIndex = 14;
-            button3.Text = "Modificar asistencia";
-            button3.UseVisualStyleBackColor = false;
-            button3.UseWaitCursor = true;
-            button3.Click += button3_Click;
+            btnModificar.BackColor = SystemColors.Info;
+            btnModificar.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnModificar.Location = new Point(599, 728);
+            btnModificar.Name = "btnModificar ";
+            btnModificar.Size = new Size(240, 66);
+            btnModificar.TabIndex = 14;
+            btnModificar.Text = "Modificar asistencia";
+            btnModificar.UseVisualStyleBackColor = false;
+            btnModificar.UseWaitCursor = true;
+            btnModificar.Click += button3_Click;
             // 
-            // panel1
+            // pnlAzul
             // 
-            panel1.BackColor = SystemColors.Highlight;
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(lblTitulo);
-            panel1.Location = new Point(4, 6);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1420, 58);
-            panel1.TabIndex = 15;
-            panel1.UseWaitCursor = true;
+            pnlAzul.BackColor = SystemColors.Highlight;
+            pnlAzul.Controls.Add(lblSubtitulo);
+            pnlAzul.Controls.Add(lblTitulo);
+            pnlAzul.Location = new Point(4, 6);
+            pnlAzul.Name = "pnlAzul";
+            pnlAzul.Size = new Size(1420, 58);
+            pnlAzul.TabIndex = 15;
+            pnlAzul.UseWaitCursor = true;
             // 
-            // textBox1
+            // txtEstudiante
             // 
-            textBox1.Location = new Point(112, 114);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(350, 27);
-            textBox1.TabIndex = 16;
-            textBox1.UseWaitCursor = true;
+            txtEstudiante.Location = new Point(112, 114);
+            txtEstudiante.Name = "txtEstudiante";
+            txtEstudiante.Size = new Size(350, 27);
+            txtEstudiante.TabIndex = 16;
+            txtEstudiante.UseWaitCursor = true;
             // 
-            // checkBox1
+            // chkPresente 
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(468, 114);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(87, 24);
-            checkBox1.TabIndex = 17;
-            checkBox1.Text = "Presente";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.UseWaitCursor = true;
+            chkPresente.AutoSize = true;
+            chkPresente.Location = new Point(468, 114);
+            chkPresente.Name = "chkPresente";
+            chkPresente.Size = new Size(87, 24);
+            chkPresente.TabIndex = 17;
+            chkPresente.Text = "Presente";
+            chkPresente.UseVisualStyleBackColor = true;
+            chkPresente.UseWaitCursor = true;
             // 
             // lblEstudiante
             // 
@@ -236,32 +236,32 @@ namespace ControlAsistencia.Presentacion
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(1429, 804);
             Controls.Add(lblEstudiante);
-            Controls.Add(checkBox1);
-            Controls.Add(textBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(button4);
+            Controls.Add(chkPresente);
+            Controls.Add(txtEstudiante);
+            Controls.Add(btnModificar);
+            Controls.Add(btnConsultar);
+            Controls.Add(btnRegistrar);
+            Controls.Add(btnPorcentaje);
             Controls.Add(dtpFecha);
             Controls.Add(dgvAsistencia);
-            Controls.Add(label3);
+            Controls.Add(lblFecha);
             Controls.Add(cmbCurso);
-            Controls.Add(label2);
-            Controls.Add(panel1);
+            Controls.Add(lblCurso);
+            Controls.Add(pnlAzul);
             Name = "FrmAsistencia";
             Text = "CONTROL DE ASISTENCIA";
             UseWaitCursor = true;
             Load += FrmAsistencia_Load;
             ((System.ComponentModel.ISupportInitialize)dgvAsistencia).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            pnlAzul.ResumeLayout(false);
+            pnlAzul.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
-        
-        
-            private void button3_Click(object sender, EventArgs e)
+
+
+        private void button3_Click(object sender, EventArgs e)
         {
             try
             {
@@ -278,7 +278,7 @@ namespace ControlAsistencia.Presentacion
                 );
 
                 // Obtener el nuevo estado
-                bool presente = checkBox1.Checked;
+                bool presente = chkPresente.Checked;
 
                 // Modificar el registro
                 asistenciaNegocio.ModificarAsistencia(
@@ -303,22 +303,22 @@ namespace ControlAsistencia.Presentacion
         #endregion
 
         private Label lblTitulo;
-        private Label label2;
+        private Label lblCurso;
         private ComboBox cmbCurso;
-        private Label label3;
+        private Label lblFecha;
         private DateTimePicker dtpFecha;
         private DataGridView dgvAsistencia;
-        private Label label4;
+        private Label lblSubtitulo;
         private DateTimePicker dtpF;
-        private Button button4;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Panel panel1;
-        private TextBox textBox1;
-        private CheckBox checkBox1;
-    
-    private readonly CursoNegocio cursoNegocio = new CursoNegocio();
+        private Button btnRegistrar;
+        private Button btnPorcentaje;
+        private Button btnConsultar;
+        private Button btnModificar;
+        private Panel pnlAzul;
+        private TextBox txtEstudiante;
+        private CheckBox chkPresente;
+
+        private readonly CursoNegocio cursoNegocio = new CursoNegocio();
 
         private void CargarCursos()
         {

@@ -109,8 +109,8 @@ namespace ControlAsistencia.Presentacion
                 // Obtener los datos
                 int idCurso = Convert.ToInt32(cmbCurso.SelectedValue);
                 DateTime fecha = dtpFecha.Value.Date;
-                string estudiante = textBox1.Text.Trim();
-                bool presente = checkBox1.Checked;
+                string estudiante = txtEstudiante.Text.Trim();
+                bool presente = chkPresente.Checked;
 
                 // Comprobar el nombre
                 if (string.IsNullOrWhiteSpace(estudiante))
@@ -127,9 +127,9 @@ namespace ControlAsistencia.Presentacion
                 MessageBox.Show("Asistencia registrada correctamente.");
 
                 // Limpiar el campo del estudiante
-                textBox1.Clear();
-                checkBox1.Checked = false;
-                textBox1.Focus();
+                txtEstudiante.Clear();
+                chkPresente.Checked = false;
+                txtEstudiante.Focus();
             }
             catch (Exception ex)
             {
